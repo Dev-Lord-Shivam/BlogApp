@@ -1,0 +1,34 @@
+.post_Details{
+    width: 50%;
+    background: white;
+    margin-inline: auto;
+    padding: 2rem 0;
+}
+.post_detail_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.post_detail_button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.post_detail_thumbnails{
+    margin: 1rem 0;
+    height: fit-content;
+    max-height: 30rem;
+    overflow: hidden;
+}
+.post_Details p{
+  margin-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 800px) {
+    .post_Details{
+        width: 100%;
+        background: transparent;
+        padding: 0;
+    }
+}

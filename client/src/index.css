@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+body{
+  background-color: #c8dcee;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+h1,h2,h3,h4,h5,h6{
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  line-height: 1.4;
+}
+
+.btn-error{
+  background: red;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+}
+img{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.container{
+  margin-inline: auto;
+  width: 84%;
+}
+section{
+  margin-top: 6rem;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.post-author{
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.post-author-avatar{
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.btn-categories{
+  background: rebeccapurple;
+    color: white;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+.btn-success{
+  background: green;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn-dark{
+  background: black;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input,textarea,select{
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 0;
+  resize: none; 
+}
+.form_error_msg{
+  background: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 1rem;
+}
+.register, .login, .create-post{
+  width: 50%;
+  margin-inline: auto;
+  height: calc(100vh - 12rem);
+  display: grid;
+  place-items: center;
+}
+.register h2, .login h2, .create-post h2 {
+  margin-bottom: 2rem;
+}
+.register small, .login small{
+   display: block;
+   margin-top: 1.5rem;
+}
+.register small a, .login small a{
+   color: blue;
+}
+
+.resiter_form button{
+  width: 20%;
+  border: none;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.loader_image{
+   width: 4rem;
+   aspect-ratio: 1/1;
+}
+
+@media screen and (max-width:800px) {
+
+  h1{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 92%;
+  }
+  .login, .register, .create-post {
+    width: 100%;
+  }
+
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: #c8dcee;
+  }
+  
+  .loader_image{
+     width: 4rem;
+     aspect-ratio: 1/1;
+  }
+}

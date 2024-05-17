@@ -1,0 +1,13 @@
+.ql-editor{
+    overflow: scroll;
+    background: white;
+    height: 5rem !important;
+}
+.ql-toolbar{
+    background: white;
+}
+
+.create-post button{
+    border: none;
+    width: 20%;
+}

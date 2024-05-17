@@ -1,0 +1,10 @@
+.centre{
+    text-align: center;
+    width: 100%;
+    margin-inline: center;
+    display: block;
+    padding-top: 5rem;
+}
+.error-pg h2{
+    margin-top: 3rem;
+}

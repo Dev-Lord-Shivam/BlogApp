@@ -1,0 +1,33 @@
+.author_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+.author{
+    display: flex;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.author:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.author_avatar{
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.author_info p {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+   
+    .author_container{
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+}

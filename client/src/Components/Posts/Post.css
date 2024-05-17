@@ -1,0 +1,14 @@
+.post_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+     
+    .post_container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+}
